@@ -1,0 +1,30 @@
+matchbox_http_endpoint = "http://matchbox.exemple.com:8080"
+matchbox_rpc_endpoint = "matchbox.exemple.com:8081"
+ssh_authorized_key = "ssh-ed25519 XXXXX"
+os_version = "3510.2.5"
+disk = "/dev/vda"
+
+# k3s config
+k3s_token = "9a08jw.zeokgklcss03nze9"
+k3s_version = "v1.27.3+k3s1"
+k3s_cluster_domain = "exemple.com"
+k3s_tls_san = "kube.exemple.com"
+k3s_database = "etcd" 
+k3s_disable_components = "traefik"
+
+# Machines and Matchbox
+k3s_servers = [
+    {
+        name = "server1"
+        mac  = "52:54:00:a1:9c:ae"
+        ip   = "192.168.0.10"
+    },
+]
+
+k3s_agents = [
+    {
+        name = "agent01"
+        mac  = "08:00:27:5b:43:ed"
+        ip   = "192.168.0.11"
+    },
+]

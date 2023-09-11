@@ -1,0 +1,5 @@
+assets/*
+groups/*.json
+ignition/*.tmpl
+profiles/*.json
+admin.conf
