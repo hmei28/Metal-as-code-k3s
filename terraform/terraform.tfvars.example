@@ -10,7 +10,15 @@ k3s_version = "v1.27.3+k3s1"
 k3s_cluster_domain = "exemple.com"
 k3s_tls_san = "kube.exemple.com"
 k3s_database = "etcd" 
-k3s_disable_components = "traefik"
+k3s_disable_components = ["traefik"]
+
+# openwrt manager
+openwrt_enabled = false
+openwrt_hostname  = "192.168.0.1"
+openwrt_password  = "secret_pass"
+openwrt_username  = "user_openwrt"
+openwrt_port      = "80"
+
 
 # Machines and Matchbox
 k3s_servers = [
