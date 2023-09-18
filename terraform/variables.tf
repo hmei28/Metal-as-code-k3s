@@ -69,6 +69,7 @@ variable "disk" {
 variable "k3s_token" {
   type        = string
   description = "k3s token (e.g. demd3.sdfkixklcxtmnzf9)"
+  sensitive   = true
 }
 
 variable "k3s_version" {
